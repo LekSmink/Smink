@@ -1,0 +1,202 @@
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+ 
+local Window = OrionLib:MakeWindow({Name = "💙Smink HUD | Script grátis", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab1 = Window:MakeTab({
+    Name = "📄Updates",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Tab1:AddSection({
+	Name = "Adicionado V2.0(Tab informações)"
+})
+
+local Section = Tab1:AddSection({
+	Name = "adicinado script na categoria MM2"
+})
+
+local Section = Tab1:AddSection({
+	Name = "fixado o botão de execução de Script Ominix(retirado)"
+})
+
+Tab1:AddParagraph("Entre no meu Discord pra receber todas as notificações", "")
+
+local Tab = Window:MakeTab({
+    Name = "📋informações",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddParagraph("Versão do Script:V2.0", "")
+Tab:AddParagraph("Suporte Script", "Mobile/PC")
+Tab:AddParagraph("Jogo suportado", "Blox fruit Brookhaven MM2 Ominix Dorrs Prison life")
+Tab:AddParagraph("Aniversário", "04/02/2012")
+Tab:AddParagraph("Aniversário do Script", "04/27/2024")
+Tab:AddParagraph("AVISO IMPORTANTE", "não abuse muito dos Scripts se não o usuário correrá risco de ban ou reset até porque não quero prejudicar ninguém")
+Tab:AddParagraph("Moro em", "Brasil | Paraíba")
+Tab:AddParagraph("Amigos", "José Miguel, Arthur Miguel, Arthur Soares, Miguel, Davi, Matheus e Isaac")
+Tab:AddParagraph("Melhor amigo", "José")
+Tab:AddParagraph("Nao ignore!","se tiver alguma sugestão ou ne ajudar no script blox fruit entre no meu Discord")
+ 
+Tab:AddButton({
+    Name = "Link do Discord(https://discord.com/invite/vWjFk6eJ)",
+    Callback = function()
+ 
+    end
+})
+ 
+local Tab2 = Window:MakeTab({
+    Name = "🍏Blox Fruit",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+Tab2:AddParagraph("Melhores Scripts", "")
+
+Tab2:AddLabel("Script Blox Fruit")
+
+Tab2:AddButton({
+    Name = "Banana Hud",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nghia11n/Banana-Hub/main/bananahub.lua"))()
+    end
+})
+ 
+Tab2:AddButton({
+    Name = "Yago Hud(key)",
+    Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/pokelok/yagoX/main/main"))()
+    end
+})
+ 
+Tab2:AddButton({
+    Name = "Dominic Hud",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadicoof/NottoGay/Start.ranscript"))()
+    end
+})
+ 
+Tab2:AddButton({
+    Name = "Neon Hud",
+    Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/NIGHTHUBONTOP/Main/main/LoaderScript.lua"))()
+    end
+})
+ 
+Tab2:AddButton({
+    Name = "Vani Hud",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/VaniaPerets/FolderGui-FolderHub/main/loader.lua", true))()
+    end
+})
+ 
+Tab2:AddButton({
+    Name = "Blox Fruit",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Script-Blox/Script/main/Script-Blox.lua"))()
+    end
+})
+ 
+Tab2:AddButton({
+    Name = "Ninja Hud(key,lag)",
+    Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/NinjaHub/main/ninjahub.lua"))()
+ 
+   end
+})
+ 
+Tab2:AddButton({
+    Name = "Faifao Hud",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao-Ver2.lua"))()
+    end
+})
+ 
+Tab2:AddButton({
+    Name = "Mtried Hud(key)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
+    end
+})
+ 
+Tab2:AddButton({
+    Name = "Unknow Hud(key)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BestScriptEverr/Main-/main/UnknownHubV3"))()
+    end
+})
+ 
+local Tab3 = Window:MakeTab({
+    Name = "🏡brookhaven",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+Tab3:AddParagraph("REDZ HUD!", "melhor script recomendado para Brookhaven")
+ 
+Tab3:AddButton({
+    Name = "Redz Hud",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB.lua"))()
+    end
+})
+
+local Tab4 = Window:MakeTab({
+    Name = "🥷Admin Script/Trool",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+Tab4:AddParagraph("Melhores Scripts", "aprovados")
+ 
+Tab4:AddButton({
+    Name = "Trolling Hud",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
+    end
+})
+
+local Tab5 = Window:MakeTab({
+    Name = "🔪MM2",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+Tab5:AddParagraph("Top script", "MM2")
+ 
+Tab5:AddButton({
+    Name = "MM2",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/pcallskeleton/CE-Technologies/main/script.lua'))()
+    end
+})
+
+Tab5:AddButton({
+    Name = "MM2(MELHOR,KEY)",
+    Callback = function()
+        local a,b,c,d=loadstring,request or http_request or(http and http.request)or(syn and syn.request),assert,"https://lhr.synteamenv.workers.dev/?page=script"c(a and b,"Your executor does not support.")a(b({Url=d,Method="POST",Headers={["Authorization"]="revamp patch 2024"}}).Body)()
+    end
+})
+
+Tab5:AddButton({
+    Name = "MM2 Troll",
+    Callback = function()
+      
+    end
+})
+
+local Tab43 = Window:MakeTab({
+    Name = "🤖Guia Mítico",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+Tab43:AddButton({
+    Name = "Yield(recomendo)",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end
+})
+
+OrionLib:Init()
