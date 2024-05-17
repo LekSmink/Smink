@@ -1,6 +1,12 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-
-local Window = OrionLib:MakeWindow({Name = "Smink HUD(Beta)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
+local Player = game.Players.LocalPlayer
+  local Window = OrionLib:MakeWindow({
+		Name = "Smink HUD",
+		HidePremium = false,
+		SaveConfig = true,
+		ConfigFolder = "OrionTest",
+        IntroText = "Smink HUD"       
+})
 
 local Tab1 = Window:MakeTab({
     Name = "📄Updates",
@@ -254,7 +260,7 @@ Tab5:AddButton({
 })
 
 Tab5:AddButton({
-    Name = "MM2 Troll(não fixado)",
+    Name = "MM2 Troll",
     Callback = function()
       
     end
