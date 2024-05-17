@@ -1,11 +1,15 @@
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
- 
-local Window = OrionLib:MakeWindow({Name = "💙Smink HUD | Script grátis", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Smink HUD(Beta)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab1 = Window:MakeTab({
     Name = "📄Updates",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
+})
+
+local Section = Tab1:AddSection({
+	Name = "adicionado o toggles velocidade e pulo"
 })
 
 local Section = Tab1:AddSection({
@@ -28,10 +32,14 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 
+local Section = Tab:AddSection({
+	Name = "Script em testes e beta"
+})
+
 Tab:AddParagraph("Versão do Script:V2.0", "")
 Tab:AddParagraph("Suporte Script", "Mobile/PC")
-Tab:AddParagraph("Jogo suportado", "Blox fruit Brookhaven MM2 Ominix Dorrs Prison life")
-Tab:AddParagraph("Aniversário", "04/02/2012")
+Tab:AddParagraph("Jogo suportado", "Blox fruit Brookhaven MM2")
+Tab:AddParagraph("Aniversário", "05/02/2012 12 anos!")
 Tab:AddParagraph("Aniversário do Script", "04/27/2024")
 Tab:AddParagraph("AVISO IMPORTANTE", "não abuse muito dos Scripts se não o usuário correrá risco de ban ou reset até porque não quero prejudicar ninguém")
 Tab:AddParagraph("Moro em", "Brasil | Paraíba")
@@ -45,16 +53,74 @@ Tab:AddButton({
  
     end
 })
- 
+
+local Tab99 = Window:MakeTab({
+    Name = "Minha Guia(beta)",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Tab99:AddSection({
+	Name = "Velocidade Beta"
+})
+
+local Section = Tab99:AddSection({
+	Name = "Pulo 10 Beta"
+})
+
+local Section = Tab1:AddSection({
+	Name = "A velocidade e pulo so funciona quando o jogador tiver no mundo 1"
+})
+
+local player = game.Players.LocalPlayer
+local toggle = Tab99:AddToggle({
+    Name = "Velocidade 50(beta)",
+    Default = "player.Character.Humanoid.WalkSpeed = 50",
+    Callback = function(Value)
+        if Value then
+            player.Character.Humanoid.WalkSpeed = 50
+        end
+    end
+})
+
+local player = game.Players.LocalPlayer
+local jumpHeightDefault = player.Character.Humanoid.JumpHeight
+
+Tab99:AddToggle({
+    Name = "Pulo 100(beta)",
+    Default = "player.Character.Humanoid.JumpHeight = 30",
+    Callback = function(Value)
+        if Value then
+            player.Character.Humanoid.JumpHeight = 25
+        else
+            player.Character.Humanoid.JumpHeight = jumpHeightDefault
+        end
+    end
+})
+
+Tab99:AddSlider({
+    Name = "Gravidade",
+    Min = 1,
+    Max = 50,
+    Default = 2,
+    Color = Color3.fromRGB(255, 255, 255),
+    Increment = 5,
+    ValueName = "Gravidade",
+    Callback = function(Value)
+        print("Nova gravidade: " .. Value)
+        workspace.Gravity = 45
+    end    
+})
+
 local Tab2 = Window:MakeTab({
     Name = "🍏Blox Fruit",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
  
-Tab2:AddParagraph("Melhores Scripts", "")
-
-Tab2:AddLabel("Script Blox Fruit")
+local Section = Tab2:AddSection({
+	Name = "Script Blox Fruit"
+})
 
 Tab2:AddButton({
     Name = "Banana Hud",
@@ -99,20 +165,24 @@ Tab2:AddButton({
 })
  
 Tab2:AddButton({
+    Name = "Faifao Hud",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao-Ver2.lua"))()
+    end
+})
+
+local Section2 = Tab1:AddSection({
+	Name = "Script com Key"
+})
+
+Tab2:AddButton({
     Name = "Ninja Hud(key,lag)",
     Callback = function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/NinjaHub/main/ninjahub.lua"))()
  
    end
 })
- 
-Tab2:AddButton({
-    Name = "Faifao Hud",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao-Ver2.lua"))()
-    end
-})
- 
+
 Tab2:AddButton({
     Name = "Mtried Hud(key)",
     Callback = function()
@@ -172,6 +242,10 @@ Tab5:AddButton({
     end
 })
 
+local Section5 = Tab1:AddSection({
+	Name = ("Você pode abusar do script mas se você quiser usar")
+})
+
 Tab5:AddButton({
     Name = "MM2(MELHOR,KEY)",
     Callback = function()
@@ -180,7 +254,7 @@ Tab5:AddButton({
 })
 
 Tab5:AddButton({
-    Name = "MM2 Troll",
+    Name = "MM2 Troll(não fixado)",
     Callback = function()
       
     end
