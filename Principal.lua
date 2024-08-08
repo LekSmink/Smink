@@ -11,9 +11,9 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 })
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
 local Window = OrionLib:MakeWindow({
-    Name = "Smink Hud",
+    Name = "Smink Hud V2",
     HidePremium = false,
-    SaveConfig = true,
+    SaveConfig = false,
     ConfigFolder = "OrionTest",
     IntroText = "Speed HUD Library"
 })
@@ -177,6 +177,20 @@ Tab2:AddButton({
 	 end
 })
 
+Tab2:AddButton({
+    Name = "Blox Fruit",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Script-Blox/Script/main/Script-Blox.lua"))()
+    end
+})
+ 
+Tab2:AddButton({
+    Name = "Faifao Hud",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao-Ver2.lua"))()
+    end
+})
+
 local Section = Tab2:AddSection({
 	Name = "Key"
 })
@@ -193,6 +207,13 @@ Tab2:AddButton({
 	Callback = function()
 	        loadstring(game:HttpGet("https://raw.githubusercontent.com/hashiishxxxx/HyHub/main/loader"))()
 	 end
+})
+
+Tab2:AddButton({
+    Name = "Unknow Hud",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BestScriptEverr/Main-/main/UnknownHubV3"))()
+    end
 })
 
 local Tab3 = Window:MakeTab({
@@ -233,8 +254,8 @@ end
 
 Tab3:AddSlider({
     Name = "Player Speed",
-    Min = 0,
-    Max = 1000,
+    Min = 75,
+    Max = 200,
     Default = defaultSpeed,
     Color = Color3.fromRGB(255, 0, 0),
     Increment = 1,
@@ -247,8 +268,8 @@ Tab3:AddSlider({
 
 Tab3:AddSlider({
     Name = "Jump Power",
-    Min = 0,
-    Max = 30000,
+    Min = 50,
+    Max = 300,
     Default = defaultJumpPower,
     Color = Color3.fromRGB(0, 255, 0),
     Increment = 1,
@@ -261,8 +282,8 @@ Tab3:AddSlider({
 
 Tab3:AddSlider({
     Name = "Gravity",
-    Min = 0,
-    Max = 50000,
+    Min = 192,
+    Max = 500,
     Default = defaultGravity,
     Color = Color3.fromRGB(0, 0, 255),
     Increment = 1,
