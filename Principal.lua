@@ -1,13 +1,13 @@
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Smink Hud",
 	Text = "carregando...",
-	Icon = ""
+	Icon = "rbxassetid://4483345998"
 })
 wait(1)
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Smink Hub V2!",
 	Text = "Carregamento completo!!!",
-	Icon = ""
+	Icon = "rbxassetid://4483345998"
 })
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))()
 local Window = OrionLib:MakeWindow({
@@ -15,7 +15,7 @@ local Window = OrionLib:MakeWindow({
     HidePremium = false,
     SaveConfig = false,
     ConfigFolder = "OrionTest",
-    IntroText = "Speed HUD Library"
+    IntroText = "Smink HUD Library"
 })
 
 OrionLib:MakeNotification({
@@ -27,7 +27,7 @@ OrionLib:MakeNotification({
 
 local Tab1 = Window:MakeTab({
     Name = "Inf",
-    Icon = "bolt",
+    Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
@@ -83,6 +83,8 @@ local Section = Tab1:AddSection({
 	Name = " "
 })
 
+Tab1:AddParagraph("Vantagens de entrar no meu Discord principal:","você pode obter mais scripts, pode chamar a galera pra jogar, se divertir e pegar a Key dos executores")
+
 Tab1:AddButton({
 	Name = "Discord",
 	Callback = function()
@@ -111,7 +113,7 @@ Tab1:AddButton({
 
 local Tab2 = Window:MakeTab({
     Name = "Blox Fruit",
-    Icon = "bolt",
+    Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
@@ -641,6 +643,55 @@ Tab3:AddToggle({
             espTextLabels = {}
         end
     end    
+})
+
+local Tab6 = Window:MakeTab({
+    Name = "Brookhaven",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+ 
+Tab6:AddParagraph("REDZ HUD!", "melhor script recomendado para Brookhaven")
+ 
+Tab6:AddButton({
+    Name = "Redz Hud",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB.lua"))()
+    end
+})
+
+local Tab5 = Window:MakeTab({
+    Name = "Créditos/ADM",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Tab5:AddSection({
+	Name = "Exploite ADM:"
+})
+
+Tab5:AddButton({
+    Name = "Yield",
+    Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end
+})
+
+local Section = Tab5:AddSection({
+	Name = "Créditos:"
+})
+
+Tab5:AddButton({
+	Name = "Make Script(copy)",
+	Callback = function()
+      		setclipboard("https://github.com/shlexware/Orion/blob/main/Documentation.md")
+        OrionLib:MakeNotification({
+            Name = "Link Copiado!",
+            Content = "Vá para o navegador e coloque o link! espero bons resultados do seu Programa...",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+  	end    
 })
 
 OrionLib:Init()
